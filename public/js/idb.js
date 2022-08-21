@@ -15,7 +15,7 @@ request.onsuccess = function (event) {
 	db = event.target.result;
 	if (navigator.online) {
 		//if internet is back, save transactions to remote database
-		saveTransaction();
+		uploadTransaction();
 	}
 };
 request.onerror = function (event) {
