@@ -58,7 +58,8 @@ function uploadTransaction() {
                                 //clear the indexed db database after sending all of its data
                                 const transaction = db.transaction(['new_transaction'], 'readwrite');
                                 const budgetObjectStore = transaction.objectStore('new_transaction');
-                                pizzaObjectStore.clear();
+                                budgetObjectStore.clear();
+                                console.log('App online. Transactions saved')
                         })
                         .catch(err => {console.log(err)});
                 }
