@@ -16,9 +16,19 @@
 This app is for avid travelers who wants to track their withdrawals, and deposits with or without a data/internet connection
 so that their account balance is accurate when traveling.
 
+USER STORY:
+AS AN avid traveler
+I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
+SO THAT my account balance is accurate when I am traveling
+
+GIVEN a budget tracker without an internet connection
+WHEN the user inputs an expense or deposit
+THEN they will receive a notification that they have added an expense or deposit
+WHEN the user reestablishes an internet connection
+THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
 
 ## Installation
-To install, download code from gitHub. In command line run 'npm init -y' & 'npm install' to initialize node and install required node packages.
+To install, download code from gitHub. In command line run 'npm init -y' & 'npm install' to initialize node and install required node packages. If Node is not installed in the computer, get the latest version of the app online.
 
 
 ## Usage
@@ -26,9 +36,15 @@ For users:
 
 Users can add funds to their budget or substract expenses. Application displays a graph of the history of their expenses as well as a table showing each individual transaction. Users can download the applicationon their phones by clicking the download icon on the browser url. Can use without an internet connection.
 
+<img src='./public/images/blooming-sands-76583.herokuapp.com_.png' width='200'>
+
 For developers:
 
 See documentation for more information on the dependencies for the application. Once server is started, or in deployed application, users can access information about the schedule of each event and ticket prices.
+
+Features:
+- Progressive Web Application, can be installed in users device
+- Offline usage: API calls will be stored in cache and made once user restablishes internet connection
 
 Technologies:
 
@@ -67,8 +83,11 @@ No test provided. Use Google Lighthouse to perform audits for performance, acces
 For any questions, concerns, or ideas for contributions, email me or contact me via gitHub.
 
 **GitHub Profile:** <https://github.com/jorge30fm>
+
 **Deployed App**:<https://blooming-sands-76583.herokuapp.com/>
+
 **GitHub Repository:** <https://github.com/jorge30fm/budget-tracker>
+
 **Email:** jorge30fm@gmail.com
 
 
